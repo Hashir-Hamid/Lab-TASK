@@ -1,0 +1,12 @@
+Explanation of the Code:
+Model (User):
+The User class represents the data and business logic. It contains the user's name and age properties and a method greet(), which returns a greeting string.
+View (UserView):
+The UserView class manages the user interface elements such as the input fields (nameInput, ageInput), the button (greetButton), and the area to display output (output).
+It provides methods like getUserInput() to fetch the user's input and displayGreeting() to show the greeting on the screen.
+Controller (UserController):
+The controller takes the UserView (UI) and interacts with the User (data model). It listens for events (like button clicks) and coordinates the interaction between the view and model.
+The handleGreetUser() method is triggered when the "Greet" button is clicked. It retrieves the user's input, creates a new User object, gets the greeting from the model, and tells the view to display it.
+Flow of the Program:
+When the web page is loaded, the UserController sets up event listeners (for example, when the "Greet" button is clicked).
+When the button is clicked, the controller collects user data via the view, creates a User object (model), and displays the greeting message using the view.
