@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .navbar a:hover {
+            color: #ddd;
+        }
+/* Question No 2  */
+         /* Container for Grid Layout */
+         .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Section Styles */
+        .header {
+            grid-area: header;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Flexbox Navigation Bar -->
+
+    <H1>Question No 1</H1>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+<br>
+    <h1>Question No 2</h1>
+
+
+     <!-- CSS Grid Layout -->
+     <div class="container">
+        <div class="header">My Portfolio</div>
+        <div class="sidebar">
+            <h2>About Me</h2>
+            <p>Hi, I'm a web developer specializing in responsive design and clean code.</p>
+            <h3>Connect with me:</h3>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Projects</h2>
+            <p>Welcome to my project showcase. Here are some of the projects I've worked on:</p>
+            <ul>
+                <li>Project A - A responsive e-commerce website.</li>
+                <li>Project B - A custom CMS built with React and Node.js.</li>
+                <li>Project C - A mobile app for online learning.</li>
+            </ul>
+        </div>
+        <div class="footer">
+            &copy; 2024 My Portfolio. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
