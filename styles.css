@@ -1,0 +1,85 @@
+/* Navbar */
+.navbar {
+    transition: all 0.3s;
+}
+
+/* Header */
+.header {
+    background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header h1, .header p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Section - 3D Cards */
+.skill-card .card {
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .card {
+    transform: rotateY(10deg) rotateX(10deg) translateZ(10px);
+}
+
+/* Timeline */
+.timeline-item {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 2rem;
+    border-left: 2px solid #007bff;
+}
+
+.timeline-item h5 {
+    font-weight: bold;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+/* Feedback Section */
+.feedback-card {
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #007bff 30%, #00d4ff);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Form */
+#contact .form-control {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+#contact .form-control:focus {
+    box-shadow: 0 0 5px #007bff;
+    border-color: #007bff;
+}
