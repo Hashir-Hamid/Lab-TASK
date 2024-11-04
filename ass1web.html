@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Flexbox Navigation Bar and CSS Grid Layout</title>
+    <title>Flexbox Navigation Bar</title>
     <style>
-        /* Reset default padding and margin */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
         
-        /* Question 1: Enhanced Navigation Bar Styling */
         nav {
-            background-color: #2b2b2b;
-            padding: 15px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #333;
+            padding: 10px 0;
         }
 
         .navbar {
@@ -31,27 +27,21 @@
         }
 
         .navbar li {
-            margin: 0 20px;
+            margin: 0 15px;
         }
 
         .navbar a {
-            color: #ffffff;
+            color: white;
             text-decoration: none;
             font-size: 1rem;
-            padding: 10px 15px;
-            transition: background 0.3s, color 0.3s;
-            border-radius: 5px;
         }
 
         .navbar a:hover {
-            background-color: #555;
-            color: #ffeb3b;
+            color: #ddd;
         }
-
-        /* Question 2: Enhanced CSS Grid Layout */
-
-        /* Container for Grid Layout */
-        .container {
+/* Question No 2  */
+         /* Container for Grid Layout */
+         .container {
             display: grid;
             grid-template-areas:
                 "header header"
@@ -62,76 +52,39 @@
             height: 100vh;
             gap: 20px;
             max-width: 1000px;
-            margin: 20px auto;
+            margin: auto;
             padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Section Styles */
         .header {
             grid-area: header;
-            background-color: #2b2b2b;
-            color: #ffffff;
+            background-color: #333;
+            color: white;
             padding: 20px;
             text-align: center;
-            font-size: 1.7rem;
-            font-weight: bold;
-            border-radius: 5px;
+            font-size: 1.5rem;
         }
 
         .sidebar {
             grid-area: sidebar;
-            background-color: #e9ecef;
+            background-color: #f4f4f4;
             padding: 20px;
-            border-radius: 5px;
-            color: #333;
-        }
-
-        .sidebar h2, .sidebar h3 {
-            color: #2b2b2b;
-        }
-
-        .sidebar a {
-            color: #2b2b2b;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .sidebar a:hover {
-            color: #ff6347;
         }
 
         .main {
             grid-area: main;
-            background-color: #ffffff;
+            background-color: #fff;
             padding: 20px;
-            border-radius: 5px;
-            color: #333;
-        }
-
-        .main h2 {
-            color: #2b2b2b;
-        }
-
-        .main li {
-            margin-bottom: 10px;
         }
 
         .footer {
             grid-area: footer;
-            background-color: #2b2b2b;
-            color: #ffffff;
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 15px;
+            padding: 10px;
             font-size: 0.9rem;
-            border-radius: 5px;
-        }
-
-        /* Additional styling for links inside sections */
-        ul {
-            padding-left: 20px;
         }
     </style>
 </head>
@@ -139,7 +92,7 @@
 
     <!-- Flexbox Navigation Bar -->
 
-    <h1 style="text-align: center; margin-top: 20px;">Question #1 - Enhanced Navigation Bar</h1>
+    <H1>Question No 1</H1>
     <nav>
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
@@ -148,12 +101,12 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <br>
+<br>
+    <h1>Question No 2</h1>
 
-    <h1 style="text-align: center; margin-top: 20px;">Question #2 - Enhanced CSS Grid Layout</h1>
 
-    <!-- CSS Grid Layout -->
-    <div class="container">
+     <!-- CSS Grid Layout -->
+     <div class="container">
         <div class="header">My Portfolio</div>
         <div class="sidebar">
             <h2>About Me</h2>
@@ -167,4 +120,16 @@
         </div>
         <div class="main">
             <h2>Projects</h2>
-           
+            <p>Welcome to my project showcase. Here are some of the projects I've worked on:</p>
+            <ul>
+                <li>Project A - A responsive e-commerce website.</li>
+                <li>Project B - A custom CMS built with React and Node.js.</li>
+                <li>Project C - A mobile app for online learning.</li>
+            </ul>
+        </div>
+        <div class="footer">
+            &copy; 2024 My Portfolio. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
